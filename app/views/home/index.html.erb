@@ -1,3 +1,9 @@
 <h1>Welcome</h1>
 
 <p>This is the home page.</p>
+
+<ul>
+  <%- for post in @posts %>
+    <li><%= link_to post.title, post %></li>
+  <%- end -%>
+</ul>
